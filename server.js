@@ -7,7 +7,7 @@ app.use(cors())
 app.use(express.static('.'));
 
 
-app.listen(9002,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log("listening on port 9002");
 });
 
